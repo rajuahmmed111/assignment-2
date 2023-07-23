@@ -1,0 +1,166 @@
+/* font */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header style */
+
+header {
+    width: 1900px;
+    height: 130px;
+    margin-left: 240px;
+    margin-right: 240px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.span {
+    color: #ff42a5;
+}
+
+.frame-img {
+    width: 86.px;
+    height: 40px;
+    margin-top: 45px
+}
+
+.nav-tittle {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+/* main style */
+main {
+    width: 1900px;
+    height: 5900px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.goat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goat-1 {
+    background-image: url('../images/Group\ 14.png');
+    width: 901px;
+    height: 700px;
+}
+
+.goat-2 {
+    margin-top: 40px;
+}
+
+.goat-des {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+.goat-des-1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.span-1 {
+    color: #be50d3;
+}
+
+.btn {
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.btn-primary {
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #ff42a5;
+    border-radius: 48px;
+    border: none;
+}
+
+.btn-primary-1 {
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    border: none;
+    background-color: #4EC5F7;
+}
+
+
+
+
+/* media style */
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column
+    }
+
+    nav>ul {
+        flex-direction: column
+    }
+
+    header {
+        margin: 20px;
+        width: 300px;
+        height: 400px;
+        justify-content: center;
+    }
+
+    main {
+        margin: 40px;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .goat {
+        flex-direction: column-reverse
+    }
+
+    .goat-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .goat-img {
+        width: 250px;
+        height: 300px;
+    }
+    .btn-primary{
+        margin-bottom: 30px;
+    }
+
+}
