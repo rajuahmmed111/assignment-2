@@ -3,6 +3,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+body {
+    border: 2px solid #0D99FF;
+}
+
 /* header style */
 
 header {
@@ -53,9 +57,10 @@ nav a {
 /* main style */
 main {
     width: 1900px;
-    height: 5900px;
+    height: 3000px;
     margin-left: 240px;
     margin-right: 240px;
+    border: 2px solid orange;
 }
 
 .goat {
@@ -206,6 +211,118 @@ main {
     background-color: rgb(109, 106, 106);
 }
 
+/* main  play */
+.play {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-d1 {
+    margin-top: 250px;
+}
+
+.play-div {
+    margin-top: 100px;
+}
+
+.play-tittle {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.video-des {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 400;
+    width: 353px;
+}
+
+/* icon bar style */
+.icon-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 120px;
+    gap: 80px;
+}
+
+.icon-bar-img {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-bar-img:hover {
+    width: 295px;
+    height: 80px;
+    border: 2px solid #ff42a5;
+    border-radius: 50px;
+    background: #FFF;
+
+}
+
+
+/* footer style */
+footer {
+    width: 2360px;
+    height: 630px;
+    background-color: #1b0f3c;
+}
+
+#footer-img {
+    margin-left: 1100px;
+}
+
+#footer {
+    display: flex;
+    gap: 60px;
+    margin-left: 700px;
+    margin-top: 25px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+.anchor {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-3 {
+    display: flex;
+    gap: 50px;
+    margin-left: 1000px;
+    margin-top: 65px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+}
+
+.footer-4 {
+    display: flex;
+    gap: 60px;
+    margin-left: 850px;
+    margin-top: 75px;
+}
+
+.footer-des {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-5{
+    margin-left: 1000px;
+    margin-top: 40px;
+}
 
 
 
@@ -289,4 +406,10 @@ main {
         width: 342px;
         height: 400px;
     }
-} 
+}
+
+@media screen and (max-width:576px) {
+    .play {
+        display: flex;
+    }
+}
