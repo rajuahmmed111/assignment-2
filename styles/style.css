@@ -61,23 +61,23 @@ main {
 .goat {
     display: flex;
     justify-content: space-between;
+    width: 1900px;
+    height: 700px;
 }
 
 .goat-1 {
     background-image: url('../images/Group\ 14.png');
-    width: 901px;
-    height: 700px;
 }
 
 .goat-2 {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .goat-des {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
-    margin-top: 150px;
+    margin-top: 40px;
 }
 
 .goat-des-1 {
@@ -87,7 +87,7 @@ main {
     margin-bottom: 30px;
 }
 
-.span-1 {
+#span-1 {
     color: #be50d3;
 }
 
@@ -119,6 +119,95 @@ main {
 }
 
 
+/* main gamer style */
+.gamer {
+    display: flex;
+    gap: 50px;
+    height: 600px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer-container {
+    margin-top: 60px;
+}
+
+.gamer-content {
+    margin-top: 130px;
+}
+
+.gamer-tittle {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.gamer-des {
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+}
+
+#gamer-btn {
+    margin-left: 800px;
+}
+
+.gamer-tittle-4 {
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.gamer-tittle-5 {
+    color: #534C64;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* video style */
+.video-tittle {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.video-des {
+    color: #534C64;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.video-container {
+    display: flex;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+.outer,
+.inner {
+    width: 342px;
+    height: 400px;
+}
+
+.inner {
+    /* background-color: #000000; */
+    color: #ff42a5;
+    transform: translate(0px, -400px);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.inner:hover {
+    background-color: rgb(109, 106, 106);
+}
+
+
+
 
 
 /* media style */
@@ -136,31 +225,68 @@ main {
     header {
         margin: 20px;
         width: 300px;
-        height: 400px;
+        height: 370px;
         justify-content: center;
     }
+}
 
+@media screen and (max-width:576px) {
     main {
         margin: 40px;
         width: 300px;
-        margin-top: 30px;
     }
 
     .goat {
         flex-direction: column-reverse
     }
 
+    .goat {
+        width: 400px;
+    }
+
     .goat-1 {
-        width: 250px;
-        height: 250px;
+        width: 350px;
     }
 
     .goat-img {
         width: 250px;
-        height: 300px;
-    }
-    .btn-primary{
-        margin-bottom: 30px;
+        height: 200px;
     }
 
+    .btn-primary {
+        margin-bottom: 5px;
+    }
 }
+
+@media screen and (max-width:576px) {
+    .gamer {
+        flex-direction: column;
+    }
+
+    .gamer-content {
+        margin-top: 5px;
+    }
+
+    .gamer-img {
+        width: 400px;
+    }
+
+    #gamer-btn {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .video {
+        margin-top: 300px;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    .video-img {
+        width: 342px;
+        height: 400px;
+    }
+} 
